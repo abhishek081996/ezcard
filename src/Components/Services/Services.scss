@@ -3,14 +3,34 @@
     display: flex;
     justify-content: center;
     background-color: #314FF4;
-        
+    padding: 0px 300px;
+    color: #FFF;
+    font-weight: 400;
 
-.plb{color: #FFF;
+.plb{
         font-size: 58px;
         font-style: normal;
         font-weight: 400;
         line-height: 69.6px; 
         margin : 250px 0px 100px 0px;
         }
-
+.onboarding{
+    
+    .innerdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .slno{
+            p{
+                margin-left: 40px;
+            }
+    .bar{
+        background-color: aliceblue;
+        width:5px;
+        height:200px;
+        margin : 0px 0px 60px 40px;
+    }
+}
+}
+}
 }
