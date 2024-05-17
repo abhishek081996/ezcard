@@ -1,0 +1,25 @@
+.aboutus{
+    margin: 6rem;
+    .aboutuscon{
+            .aboutrow{
+                display: flex;
+                align-items: center;
+                padding: 2rem;
+                margin-top: 8rem;
+                justify-content: space-around;
+                .aboutcolimg{
+                    //background-color:aqua;
+                    padding: 0px 80px;
+                    p{font-size: 18px;}
+                    h4{font-size: 32px;}
+                    .quote{
+                        font-size: 26px;
+                        color: #4A5BB5;;
+                    }
+                }
+                .aboutcoltxt{
+                    padding: 0px 80px;
+                }
+            }
+    }
+}

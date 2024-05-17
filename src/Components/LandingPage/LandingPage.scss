@@ -1,17 +1,7 @@
 .landingPage{
+    width: 99vw;
+    overflow: hidden !important;
 
-    .navbar{
-        .logoCol{
-            
-        }
-        .links{
-            display: flex;
-            justify-content: flex-end;
-            a{
-                margin-right: 30px;
-            }
-        }
-    }
     .videoContainer{
         padding: 0px;
         height: auto;
@@ -24,6 +14,7 @@
         z-index: -1;
         padding:  0px;
         margin: 0px;
+        height: 96vh;
         
         .videoTag{
             //position: absolute;
@@ -40,12 +31,13 @@
         div{
             z-index: 1;
         }
+        
         .videoitems{
             position: absolute;
             padding:  0px;
             margin: 0px 0px 0px 0px;
             height: auto;
-            align-self: flex-end;
+            align-self: center;
             overflow: hidden;
             
             .bluediv{
@@ -56,6 +48,17 @@
         .videotext{         
             display: flex;
             justify-content: center;
+            font-size: 56px;
+            color: #FFF;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 137.548%; 
+        }
+        .para{
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
         }
     }
     }
