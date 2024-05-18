@@ -19,10 +19,10 @@ function Services() {
             </Col>
           </Row>}
           <Row className="onboarding">
-            <Col >
+            <Col xs="12" md="6">
               <img src={onboarding}></img>
             </Col>
-            <Col className="onboardingcol">
+            <Col className="onboardingcol"  xs="12" md="6">
               <div className="innerdiv">
                 <div>
                   <h1>Customer Onboarding & KYC</h1>
@@ -56,7 +56,7 @@ function Services() {
 
 
           <Row className="onboarding even">
-            <Col className="onboardingcol">
+            <Col className="onboardingcol"   xs="12" md="6">
               <div className="innerdiv">
                 <div className="slno">
                   {" "}
@@ -74,7 +74,7 @@ function Services() {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col   xs="12" md="6">
               <img src={img6}></img>
             </Col>
           </Row>
@@ -89,10 +89,10 @@ function Services() {
             </Row>
             </Container>
           <Row className="onboarding">
-            <Col>
+            <Col   xs="12" md="6">
               <img src={img7}></img>
             </Col>
-            <Col className="onboardingcol">
+            <Col className="onboardingcol"   xs="12" md="6">
               <div className="innerdiv">
                 <div>
                   <h1>Customer Onboarding & KYC</h1>
