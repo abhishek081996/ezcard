@@ -3,12 +3,16 @@ import { Col, Container, Row } from 'react-bootstrap';
 import abt1 from '../../Assets/abt1.png';
 import abt2 from '../../Assets/abt2.png';
 import abt3 from '../../Assets/abt3.png';
-import './Aboutus.scss'
+import './Aboutus.scss';
+
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import LandingPage from '../LandingPage/LandingPage';
 function Aboutus()
 {
 
-    return <div className='aboutus'>
+    return <><Container fluid><LandingPage/></Container><div className='aboutus'>
         <Container fluid className='aboutuscon'> 
+        <AnimationOnScroll animateIn="animate__fadeInLeft" >
             <Row className='aboutrow'>
                 <Col className='aboutcolimg'> <h4>About Us</h4>
                 <p>CARD PAYMENTZ LIMITED, a company incorporated under the laws of England and Wales, with Company Number 13582655 at its registered office 27 Old Gloucester Street, London, United Kingdom, WC1N 3AX.
@@ -16,6 +20,8 @@ Your own payment partner to offer multiple payment options through our diverse n
                 </Col>
                 <Col  className='aboutcoltxt'><img src={abt1}></img></Col>
             </Row>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInRight">
             <Row className='aboutrow'>
             <Col  className='aboutcoltxt'><img src={abt2}></img></Col>
                 <Col className='aboutcolimg'> <h4>Why Us?</h4>
@@ -30,6 +36,8 @@ Our financial solution has helped online businesses achieve financial independen
                 </Col>
                 
             </Row>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInLeft" > 
             <Row className='aboutrow'>
                 <Col className='aboutcolimg'> <h4>How We Work</h4>
                 <p><span className='quote'>“Team that believes in your ideas! “</span>
@@ -42,10 +50,11 @@ Flexible integration for your business that enables your customers pay the way t
 </p></Col>
                 <Col  className='aboutcoltxt'><img src={abt3}></img></Col>
             </Row>
+            </AnimationOnScroll>
         </Container>
 
     </div>
 
-
+    </>
 }
 export default Aboutus;

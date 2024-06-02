@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
-  padding: 0px 300px;
+  padding: 0px 10em;
   color: #000;
   font-weight: 400;
 
@@ -36,6 +36,7 @@
           background-color: aliceblue;
           width: 5px;
           height: 200px;
+          
           margin: 0px 0px 60px 40px;
         }
       }
@@ -60,7 +61,6 @@
   }
 
   .cards {
-      
     .card {
         display: flex;
       h1 {
