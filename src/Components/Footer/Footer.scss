@@ -1,11 +1,11 @@
 .footer {
-    background-color: #000;
+  background-color: #000;
   background-image: url("../../Assets/footer.png");
-  opacity:1;
-
-background-repeat: no-repeat;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 60px;
-  padding-top: 40px ;
+  padding-top: 40px;
   .footercol1 {
     display: flex;
     flex-direction: column;
@@ -51,18 +51,17 @@ background-repeat: no-repeat;
         }
       }
     }
-
   }
   .Foot2 {
     width: 550px;
     color: #fff;
-    font-size:26px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    a{
-        text-decoration: none;
-        color:#fff ;
+    a {
+      text-decoration: none;
+      color: #fff;
     }
   }
 }
