@@ -1,19 +1,38 @@
 .App {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 @keyframes anime_dropin {
   from {
-   opacity: 0;
-   transform: translateY(-100px);
+    opacity: 0;
+    transform: translateY(-100px);
   }
   to {
-   opacity: 1;
-   transform: translate(0px);
+    opacity: 1;
+    transform: translate(0px);
   }
- }
- 
+}
 
-.slideanimate{
-  transition: anime_dropin  1s linear;
+.slideanimate {
+  transition: anime_dropin 1s linear;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  z-index: 9;
+  width: 0.2vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cdcdcd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272727;
+  border-radius: 10px;
 }

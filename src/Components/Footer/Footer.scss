@@ -1,17 +1,17 @@
 .footer {
-  background-color: #000;
   background-image: url("../../Assets/footer.png");
   opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 12vw;
   .footercol1 {
     display: flex;
     flex-direction: column;
     width: 550px;
     .footerico {
-      height: 200px;
+      width: 60%;
+      height: auto;
     }
     p {
       color: #fff;

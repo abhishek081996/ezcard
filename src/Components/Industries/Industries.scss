@@ -1,65 +1,415 @@
 .industries {
-    overflow: hidden;
-    margin: 0px 6rem;
-    h1{
-        text-align: center;
-        margin : 4rem;
-    }
-  .cards {
-.cardrow{
-   
-    justify-content: space-around;
-}
-    .card {
-      display: flex;
-      color: #000;
-      display: flex;
-      height: 400px;
-      width: 20rem;
-      padding: 24px;
-      flex-direction: column;
-      border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
-      gap: 10px;
-      margin: 10px 20px ;
-.headerspan{
+  overflow: hidden;
+  text-align: center;
+  .cutimg {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin: 4rem;
+  }
+  h2 {
+    margin-top: 4vw;
+  }
+  .induscot {
+    margin: 0px 1rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content:  flex-start;
-    gap: 1rem;
-      h1 {
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 300;
-      }
-      img{
-          height: 100px;
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35vw;
+      img {
+        width: 40vw;
       }
     }
+    .text {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      padding-right: 15%;
+    }
+  }
+  .metaCot {
+    height: 50vw;
+    overflow: hidden;
+    .meta {
+      margin: 0px !important;
+      display: flex;
+      flex-direction: column;
+      background-color: #cf2829;
+      height: 50vw;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 30vw;
+        //width: auto;
+      }
+    }
+
+    .card {
+      position: sticky;
+      height: 8vw;
+      width: 15vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid #fff;
+      background: #fff;
+      padding: 10px;
+      h4 {
+        font-weight: 600;
+        font-size: 1.5vw;
+      }
       p {
-        font-family: Outfit;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 30.8px;
+        margin-top: 5px;
+        font-size: 1vw;
+      }
+    }
+    .lefttop {
+      left: 10%;
+      bottom: 70%;
+    }
+    .righttop {
+      left: 70%;
+      bottom: 70%;
+    }
+    .rightbottom {
+      left: 70%;
+      bottom: 20%;
+    }
+    .leftbottom {
+      left: 10%;
+      bottom: 20%;
+    }
+  }
+
+  .animation {
+    margin-top: 2vw;
+
+    .content {
+      position: inherit;
+      padding-bottom: 4vw !important;
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
+      height: 39vw;
+      overflow: hidden;
+
+      font-size: 35px;
+      //height: 10em;
+      //color: #ecf0f1;
+
+      &__container {
+        display: flex;
+        font-weight: 600;
+        overflow: shown;
+        height: 16em;
+        padding: 0 40px;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__text {
+          text-align: center;
+          align-self: center;
+          display: inline;
+          float: left;
+          width: 100%;
+          //sdisplay: flex;
+          //flex-direction: column;
+          justify-content: center;
+          align-self: center;
+          font-size: 1.4em;
+          color: #fff;
+          margin: 0;
+        }
+
+        &__list {
+          margin-top: 0;
+          text-align: left;
+          list-style: none;
+          width: 100%;
+          align-self: flex-start;
+          transform: translate3d(0, 0%, 0);
+          -webkit-animation-name: change;
+          -webkit-animation-duration: 12ss;
+          -webkit-animation-iteration-count: infinite;
+          animation-name: change;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+
+          &__item {
+            //line-height: 40px;
+            .cardContainer {
+              //width: 100%;
+              padding: 2vw 0vw;
+              margin: 3em 0em;
+              display: flex;
+              justify-content: center;
+
+              .card {
+                width: 75%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                padding: 2%;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+                border-radius: 12px;
+                padding-bottom: 3vw;
+                color: #cf2128;
+                img {
+                  width: 16vw;
+                }
+                h4 {
+                  margin-top: 2.6em;
+                  //align-self: flex-start;
+                  font-weight: 600;
+                  font-size: 2vw;
+                }
+                p {
+                  margin-top: 0.3em;
+                  //align-self: flex-start;
+                  font-weight: 400;
+                  font-size: 1vw;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+        .text_animation {
+          height: 1.4em;
+          overflow: hidden;
+          //width: 40%;
+          .content__container__list__text {
+            //align-self: flex-start;
+            padding: 0%;
+            //font-size: 1.4em;
+            //swidth: 30%;
+            //line-height: 1.4em;
+            -webkit-animation-name: change;
+            -webkit-animation-duration: 12s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: change;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            list-style: none;
+          }
+          .colorbl {
+            color: #ffffff !important;
+            opacity: 1;
+          }
+          .colorblk {
+            color: #000 I !important;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @-webkit-keyframes opacity {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* These values remove the list reversal
+                  0%, 6%, 100% {transform:translate3d(0,0,0);}
+                  16.66%, 22.66% {transform:translate3d(0,-16.66%,0);}
+                  33.32%, 39.32% {transform:translate3d(0,-33.33%,0);}
+                  49.98%, 55.98% {transform:translate3d(0,-49.99%,0);}
+                  66.64%, 72.64% {transform:translate3d(0,-66.66%,0);}
+                  83.3%, 89.3% {transform:translate3d(0,-83.33%,0);}
+                
+                Change animation duraiton to 10s if reversal is removed
+                */
+
+    @-webkit-keyframes change {
+      0%,
+      4%,
+      100% {
+        transform: translate3d(0, -3%, 0);
+      }
+      14%,
+      18% {
+        transform: translate3d(0, -28%, 0);
+      }
+      28%,
+      32% {
+        transform: translate3d(0, -54%, 0);
+      }
+      42%,
+      46% {
+        transform: translate3d(0, -77%, 0);
+      }
+      57%,
+      61% {
+        transform: translate3d(0, -54%, 0);
+      }
+      71%,
+      75% {
+        transform: translate3d(0, -28%, 0);
+      }
+      85%,
+      89% {
+        transform: translate3d(0, -3%, 0);
+      }
+    }
+
+    @-o-keyframes opacity {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes change {
+      0%,
+      4%,
+      100% {
+        transform: translate3d(0, -3%, 0);
+      }
+      14%,
+      18% {
+        transform: translate3d(0, -28%, 0);
+      }
+      28%,
+      32% {
+        transform: translate3d(0, -54%, 0);
+      }
+      42%,
+      46% {
+        transform: translate3d(0, -77%, 0);
+      }
+      57%,
+      61% {
+        transform: translate3d(0, -54%, 0);
+      }
+      71%,
+      75% {
+        transform: translate3d(0, -28%, 0);
+      }
+      85%,
+      89% {
+        transform: translate3d(0, -3%, 0);
+      }
+    }
+
+    @-moz-keyframes opacity {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes change {
+      0%,
+      4%,
+      100% {
+        transform: translate3d(0, -3%, 0);
+      }
+      14%,
+      18% {
+        transform: translate3d(0, -28%, 0);
+      }
+      28%,
+      32% {
+        transform: translate3d(0, -54%, 0);
+      }
+      42%,
+      46% {
+        transform: translate3d(0, -77%, 0);
+      }
+      57%,
+      61% {
+        transform: translate3d(0, -54%, 0);
+      }
+      71%,
+      75% {
+        transform: translate3d(0, -28%, 0);
+      }
+      85%,
+      89% {
+        transform: translate3d(0, -3%, 0);
+      }
+    }
+
+    @keyframes opacity {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes change {
+      0%,
+      4%,
+      100% {
+        transform: translate3d(0, -3%, 0);
+      }
+      14%,
+      18% {
+        transform: translate3d(0, -28%, 0);
+      }
+      28%,
+      32% {
+        transform: translate3d(0, -54%, 0);
+      }
+      42%,
+      46% {
+        transform: translate3d(0, -77%, 0);
+      }
+      57%,
+      61% {
+        transform: translate3d(0, -54%, 0);
+      }
+      71%,
+      75% {
+        transform: translate3d(0, -28%, 0);
+      }
+      85%,
+      89% {
+        transform: translate3d(0, -3%, 0);
       }
     }
   }
-  .verticalrow{
-      display: flex;
-      flex-direction: column;
-      margin: 4rem 0px 6rem 0px;
-      .card{
-        width: initial;
-        color: #FFF ;
-        border-radius: 12px;
-        background: #314FF4;
-        height: auto;
-        .headerspan{
-            margin-bottom: 1rem;
-        }
+}
+
+@media only screen and (max-width: 768px) {
+  .industries {
+    .text {
+      padding: 5% !important;
+      text-align: center !important ;
+    }
+    .metaCot {
+      .card {
+        padding: 0px;
+        margin: 0px !important;
       }
+    }
   }
 }

@@ -1,0 +1,70 @@
+.landingPage {
+  //width: 99vw;
+  overflow: hidden !important;
+  .videoContainer {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    //width: 100vw !important;
+    .video {
+      //width: 100vw;
+      position: relative;
+      z-index: -1;
+      padding: 0px !important;
+      margin: 0px;
+      height: 96vh;
+      img {
+        position: relative;
+        right: 0;
+        bottom: 28.1%;
+        width: 140%;
+        padding: 0px;
+        //translate: 0% -20% 0%;
+        background-position: 100% 100%;
+      }
+
+      .videoTag {
+        //position: absolute;
+        display: flex;
+        padding: 0px;
+        position: relative;
+        justify-self: center;
+        object-fit: fill;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      div {
+        z-index: 1;
+      }
+
+      .videoitems {
+        position: absolute;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        height: auto;
+        align-self: center;
+        overflow: hidden;
+
+        .bluediv {
+          height: 100px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='100' viewBox='0 0 1920 149' fill='none'%3E%3Cpath d='M-6 150.5L1924 0.5V150.5H-6Z' fill='%23314FF4'/%3E%3C/svg%3E");
+        }
+        .videotext {
+          display: flex;
+          justify-content: center;
+          font-size: 56px;
+          color: #fff;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 137.548%;
+        }
+        .para {
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
